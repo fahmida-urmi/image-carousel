@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ImageCarousel</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="relative w-full max-w-3xl mx-auto">
+    <!-- Carousel Container -->
+    <div class="overflow-hidden relative h-94 rounded-lg">
+      <!-- Slides Wrapper -->
+      <div id="carouselSlides" class="flex transition-transform duration-500 ease-in-out w-full">
+        <div class="w-full flex-shrink-0">
+          <img src="./img/istockphoto-1922730400-612x612.jpg" alt="Slide 1" class="w-full  object-cover">
+        </div>
+        <div class="w-full flex-shrink-0">
+          <img src="./img/istockphoto-2003413574-612x612.jpg" alt="Slide 2" class="w-full object-cover">
+        </div>
+        <div class="w-full flex-shrink-0">
+          <img src="./img/istockphoto-2079308944-612x612.jpg" alt="Slide 3" class="w-full  object-cover">
+        </div>
+        <div class="w-full flex-shrink-0">
+          <img src="./img/istockphoto-2149520763-612x612.jpg" alt="Slide 3" class="w-full  object-cover">
+        </div>
+        <div class="w-full flex-shrink-0">
+          <img src="./img/istockphoto-2154874247-612x612.jpg" alt="Slide 3" class="w-full  object-cover">
+        </div>
+       
+    </div>
+    
+    </div>
+
+    <!-- Previous Button -->
+    <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+      &#10094;
+    </button>
+    <!-- Next Button -->
+    <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+      &#10095;
+    </button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
